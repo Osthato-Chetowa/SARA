@@ -4,7 +4,7 @@ import serial
 import time
 import sara
 
-#phone_number_Remi = '+33778523259'
+#phone_number_Thomas = '+33782617291'
 
 def sendSms(phone_number):
 
@@ -33,6 +33,6 @@ def sendSms(phone_number):
     time.sleep(2)
 
 #print("sending_sms")
-#sendSms(phone_number_Remi)
+#sendSms(phone_number_Thomas)
 #print("sms succesfully sent")
 
