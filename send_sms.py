@@ -20,7 +20,7 @@ def sendSms(phone_number):
     phone.write(b'AT+CNMI=2,1,0,0,0\r\n')
     time.sleep(2)
 
-    #phone.write(b'AT+CMGS=\"+33780514005\"\r\n')
+    #phone.write(b'AT+CMGS=\"+33782617291\"\r\n')
     #time.sleep(2)
 
     phone.write(f'AT+CMGS=\"{phone_number}\"\r\n'.encode())
@@ -32,7 +32,7 @@ def sendSms(phone_number):
     phone.write(b'\x1A')  # Envoi du SMS
     time.sleep(2)
 
-#print("sending_sms")
-#sendSms(phone_number_Thomas)
-#print("sms succesfully sent")
+print("sending_sms")
+sendSms(phone_number_Thomas)
+print("sms succesfully sent")
 
